@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webview_samples/flutter_webview_plugin_sample.dart';
+import 'package:webview_samples/webview_flutter_plus_sample.dart';
 import 'package:webview_samples/webview_flutter_sample.dart';
 
 const String url =
@@ -41,6 +42,11 @@ class Home extends StatelessWidget {
             context,
             'flutter_webview_plugin sample',
             FlutterWebViewPluginSample(),
+          ),
+          _buildListTile(
+            context,
+            'webview_flutter_plus sample',
+            WebViewFlutterPlusSample(),
           ),
         ],
       ),
