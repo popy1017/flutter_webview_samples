@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:webview_samples/flutter_webview_plugin_sample.dart';
 import 'package:webview_samples/webview_flutter_sample.dart';
 
-const String url = 'https://flutter.dev/';
+const String url =
+    'https://www.kurashiru.com/recipes/7ba2b9a0-52d0-4f88-b19d-a2e101983110';
 
 void main() {
   runApp(MyApp());
@@ -34,6 +36,11 @@ class Home extends StatelessWidget {
             context,
             'webview_flutter sample',
             WebViewFlutterSample(),
+          ),
+          _buildListTile(
+            context,
+            'flutter_webview_plugin sample',
+            FlutterWebViewPluginSample(),
           ),
         ],
       ),
