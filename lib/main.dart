@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webview_samples/flutter_inappwebview_sample.dart';
 import 'package:webview_samples/flutter_webview_plugin_sample.dart';
 import 'package:webview_samples/webview_flutter_plus_sample.dart';
 import 'package:webview_samples/webview_flutter_sample.dart';
@@ -47,6 +48,11 @@ class Home extends StatelessWidget {
             context,
             'webview_flutter_plus sample',
             WebViewFlutterPlusSample(),
+          ),
+          _buildListTile(
+            context,
+            'flutter_inappwebview sample',
+            FlutterInappwebviewSample(),
           ),
         ],
       ),
