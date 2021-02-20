@@ -4,6 +4,8 @@ import 'package:webview_samples/flutter_webview_plugin_sample.dart';
 import 'package:webview_samples/webview_flutter_plus_sample.dart';
 import 'package:webview_samples/webview_flutter_sample.dart';
 
+import 'opacity_webview_sample.dart';
+
 const String url =
     'https://www.kurashiru.com/recipes/7ba2b9a0-52d0-4f88-b19d-a2e101983110';
 
@@ -38,6 +40,11 @@ class Home extends StatelessWidget {
             context,
             'webview_flutter sample',
             WebViewFlutterSample(),
+          ),
+          _buildListTile(
+            context,
+            'webview_flutter with Opacity sample',
+            OpacityWebViewSample(),
           ),
           _buildListTile(
             context,
