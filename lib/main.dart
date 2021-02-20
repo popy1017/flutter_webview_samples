@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webview_samples/draggable_scrollable_sheet_sample.dart';
 import 'package:webview_samples/flutter_inappwebview_sample.dart';
 import 'package:webview_samples/flutter_webview_plugin_sample.dart';
 import 'package:webview_samples/webview_flutter_plus_sample.dart';
@@ -61,6 +62,11 @@ class Home extends StatelessWidget {
             'flutter_inappwebview sample',
             FlutterInappwebviewSample(),
           ),
+          _buildListTile(
+            context,
+            'DraggableScrollableSheet sample',
+            DraggableScrollableSheetSample(),
+          ),
         ],
       ),
     );
@@ -75,6 +81,12 @@ class Home extends StatelessWidget {
   }
 
   void _moveTo(BuildContext context, Widget widget) {
-    Navigator.push(context, MaterialPageRoute(builder: (_) => widget));
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => widget,
+        fullscreenDialog: true,
+      ),
+    );
   }
 }
