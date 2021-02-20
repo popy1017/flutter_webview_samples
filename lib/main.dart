@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webview_samples/cupertino_dialog_sample.dart';
+import 'package:webview_samples/dismissible_webview_sample.dart';
 import 'package:webview_samples/draggable_scrollable_sheet_sample.dart';
 import 'package:webview_samples/flutter_inappwebview_sample.dart';
 import 'package:webview_samples/flutter_webview_plugin_sample.dart';
@@ -72,6 +73,11 @@ class Home extends StatelessWidget {
             context,
             'CupertinoFullScreenDialogTransition sample',
             CupertinoDialogSample(),
+          ),
+          _buildListTile(
+            context,
+            'Dismiss webview sample',
+            DismissibleWebViewSample(),
           ),
         ],
       ),
